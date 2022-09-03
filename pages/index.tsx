@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import dynamic from 'next/dynamic';
 import styles from '../styles/Home.module.css'
 
-const MapWithNoSSR = dynamic(() => import('./Map'), {
+const MapWithNoSSR = dynamic(() => import('../components/Map'), {
   ssr: false,
 });
 
