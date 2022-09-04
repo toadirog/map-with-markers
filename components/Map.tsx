@@ -3,9 +3,10 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
 const shegolLocation = { lat: 59.941858, lng: 30.363398 }
+const saintPLocation = { lat: 59.939099 , lng: 30.315877 }
 
 const Map = () => {
-  const [geoData, setGeoData] = useState({ lat: 59.9433, lng: 30.3235 });
+  const [geoData, setGeoData] = useState(saintPLocation);
 
   return (
     <MapContainer center={geoData} zoom={12} style={{ height: '100vh' }}>
