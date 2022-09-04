@@ -9,10 +9,14 @@ const Map = () => {
   const [geoData, setGeoData] = useState(saintPLocation);
 
   return (
-    <MapContainer center={geoData} zoom={12} style={{ height: '100vh' }}>
+    <MapContainer
+      center={geoData}
+      zoom={12}
+      style={{ height: 'calc(100vh - 52px)' }}
+    >
       <TileLayer
-        attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution='<a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"
       />
       <Marker position={[geoData.lat, geoData.lng]}>
         <Popup>Лерчик хеллоуу</Popup>
