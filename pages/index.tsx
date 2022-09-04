@@ -10,7 +10,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h4>Лера подумала о местах</h4>
+        <h4 className={styles.heading4}>Лера подумала о местах</h4>
       </div>
      <MapWithNoSSR />
     </div>

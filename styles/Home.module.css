@@ -4,12 +4,13 @@
 
 .header {
   width: 100%;
-  z-index: 10000;
   background-color: white;
-  font-size: 20px;
-  font-weight: 500;
   padding: 16px;
   box-shadow: 0px -2px 0px 0px grey inset;
+}
+
+.heading4 {
+  margin: 0;
 }
 
 .main {
