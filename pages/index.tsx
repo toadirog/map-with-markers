@@ -9,7 +9,7 @@ const MapWithNoSSR = dynamic(() => import('../components/Map'), {
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
-      <div>
+      <div className={styles.header}>
         <h4>Лера подумала о местах</h4>
       </div>
      <MapWithNoSSR />
