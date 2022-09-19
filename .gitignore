@@ -1,6 +1,7 @@
 ### NextJS ###
 # Next build dir
 .next/
+.vscode/
 
 ### react ###
 .DS_*
